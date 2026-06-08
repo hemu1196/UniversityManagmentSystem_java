@@ -79,5 +79,117 @@ Use these credentials to explore the different dashboards:
 
 ---
 
+## 🖥️ Console UI Previews & Test Outputs
+
+To showcase the clean design, formatting, and validations implemented, here are actual terminal outputs from the application:
+
+### 1. Main Welcome Portal & Quick Directory
+```text
+======================================================================
+                  ACADEMIC NEXUS: UNIVERSITY SYSTEM                   
+======================================================================
+
+---- System Quick-Access Directory (For Testing) ----
+  • Administrator Portal : username: [ admin  ] | password: [ admin123   ]
+  • Faculty Portal       : username: [ turing ] | password: [ prof123    ]
+  • Student Portal       : username: [ hema   ] | password: [ student123 ]
+-----------------------------------------------------
+
+1. Login to Portal
+2. Exit Application
+
+Select Option (1-2): 1
+
+Enter Username: admin
+Enter Password: ******
+Authenticating...
+Authentication Successful!
+```
+
+### 2. Administrator Panel (Dashboard & Distribution Stats)
+```text
+======================================================================
+                     ADMINISTRATOR CONTROL PANEL                      
+======================================================================
+Welcome, Chief Administrator
+Role: SYSTEM ADMIN
+
+[ Stats Dashboard: Students: 5 | Faculty: 4 | Courses: 5 | Avg GPA: 3.42 ]
+
+1. Department Management
+2. Course Management
+3. Student Management
+4. Professor/Faculty Management
+5. Overall System Stats & Visualizations
+6. Logout
+
+Enter your choice (1-6): 5
+
+======================================================================
+                      DETAILED SYSTEM STATISTICS                      
+======================================================================
+University Distribution Summary:
+  • Total Student Enrollment : 5
+  • Total Employed Faculty   : 4
+  • Total Courses Cataloged  : 5
+  • Overall Student GPA      : 3.42 / 4.00
+  • Most Enrolled Course     : Introduction to Programming (CS101) (3 students)
+
+Department-wise Enrollments (Visualization):
+  CS         [ 3 students] ■■■
+  EE         [ 1 students] ■
+  ME         [ 1 students] ■
+```
+
+### 3. Catalog View (Course Management Table)
+```text
+======================================================================
+                          COURSE MANAGEMENT                           
+======================================================================
+┌─────────────┬─────────────────────────────────────┬─────────┬──────────┬──────────────────────┬──────────┬────────────┐
+│ Course Code │ Course Title                         │ Credits │ Dept     │ Instructor           │ Enrolled │ Seats Left │
+├─────────────┼─────────────────────────────────────┼─────────┼──────────┼──────────────────────┼──────────┼────────────┤
+│ CS101       │ Introduction to Programming         │ 4       │ CS       │ Dr. Ada Lovelace     │ 3/30     │ 27         │
+│ CS201       │ Design and Analysis of Algorithms    │ 4       │ CS       │ Dr. Alan Turing      │ 2/25     │ 23         │
+│ EE101       │ Fundamentals of AC/DC Circuits       │ 3       │ EE       │ Dr. Nikola Tesla     │ 1/20     │ 19         │
+│ PHY102      │ Modern Physics & Relativity          │ 4       │ EE       │ Dr. Albert Einstein  │ 2/15     │ 13         │
+│ ME101       │ Engineering Thermodynamics           │ 3       │ ME       │ UNASSIGNED           │ 1/25     │ 24         │
+└─────────────┴─────────────────────────────────────┴─────────┴──────────┴──────────────────────┴──────────┴────────────┘
+```
+
+### 4. Student Academic Portal (Grades & Attendance Report)
+```text
+======================================================================
+                STUDENT PORTAL - ACADEMICS & SERVICES                 
+======================================================================
+Welcome, Hemachandra S
+ID: S001 | Department: Computer Science & Engineering
+Current Academic GPA: 3.88
+
+1. Academic Dashboard & Report Card
+2. Enroll in Course
+3. Drop Course
+4. Tuition & Fee Center
+5. Logout
+
+Enter choice (1-5): 1
+
+======================================================================
+                   ACADEMIC DASHBOARD & REPORT CARD                   
+======================================================================
+┌─────────────┬─────────────────────────────────────┬─────────┬──────────────────────┬───────┬────────────┐
+│ Course Code │ Course Title                         │ Credits │ Instructor           │ Grade │ Attendance │
+├─────────────┼─────────────────────────────────────┼─────────┼──────────────────────┼───────┼────────────┤
+│ CS101       │ Introduction to Programming         │ 4       │ Dr. Ada Lovelace     │ A     │  94.5%     │
+│ CS201       │ Design and Analysis of Algorithms    │ 4       │ Dr. Alan Turing      │ A-    │  92.0%     │
+│ PHY102      │ Modern Physics & Relativity          │ 4       │ Dr. Albert Einstein  │ B+    │  88.0%     │
+└─────────────┴─────────────────────────────────────┴─────────┴──────────────────────┴───────┴────────────┘
+
+Total Enrolled Credits : 12
+Current Semester GPA   : 3.88
+```
+
+---
+
 ## 📝 License
 Distributed under the MIT License. See `LICENSE` for more information.
